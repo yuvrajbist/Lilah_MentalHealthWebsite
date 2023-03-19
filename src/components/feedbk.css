@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+.feedback section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #CAB9D9;
+    background-size: cover;
+    background-position: center;
+    filter:brightness(90%);
+}
+.feedback body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.feedback .container{
+    width: 360px;
+    background: #FFE4C4;
+    box-shadow: 0 0 8px rgba(250,250,250,0.6);
+    opacity: 0.6;
+}
+.feedback .container form{
+    width:100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+.feedback form h1{
+    padding: 10px 0;
+    color:rebeccapurple;
+
+}
+.feedback form .id{
+    position: relative;   
+}
+.feedback .id i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.feedback form input{
+    width: 100%;
+    height: 50px;
+    margin: 4px 0;
+    border: 0.5px ;
+    border-radius: 3px;
+    background: #E2ECF7;
+    padding: 0 15px;
+    padding-right: 45px;
+    font-size: 20px;
+}
+.feedback form textarea{
+    padding: 5px 15px;
+    border: 0.5px;
+    border-radius: 3px;
+    background: #E2ECF7;
+    font-size: 20px;
+    width: 100%;
+    margin: 4px 0;
+}
+.feedback form button{
+    margin-top: 5px;
+    border: none;
+    background: rebeccapurple;
+    color: #CAB9D9;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.feedback form input:focus,
+.feedback form textarea:focus{
+    border: 1px solid #CAB9D9;
+    color: #561496;
+    transition: all 0.3s ease;
+}
+.feedback form input:focus::placeholder ,
+.feedback form textarea:focus::placeholder{
+    padding-left: 4px;
+    color: #561496;
+    transition: all 0.3s ease;
+    
+}
+.feedback form input:focus + i{
+    color: #CAB9D9;
+    transition: all 0.3s ease;
+}
