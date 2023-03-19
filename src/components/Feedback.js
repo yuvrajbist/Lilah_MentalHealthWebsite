@@ -18,7 +18,7 @@ export default class Feedback extends Component {
                 <textarea cols="15" rows="5" placeholder="Enter your opinions here.."></textarea>
                 <button>Send</button>
         </form>
-</div>
+    </div>
     )
   }
 }
